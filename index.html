@@ -15,10 +15,10 @@
 
     <script>
         // API Authorization Key
-        const apiKey = 'YOUR_API_KEY';
+        const apiKey = ${{ secrets.ROWSKEY }};
 
         // Fetch data from API with authorization headers
-        fetch('https://api.example.com/data', {
+        fetch('https://api.rows.com/v1beta1/spreadsheets/3Fc6yUcb0iZ8UjMUKR4IdA/tables/0d460a7f-6cc1-4e6a-a857-97f7b20c8bf4/values/C1:D', {
             headers: {
                 'Authorization': `Bearer ${apiKey}`
             }
