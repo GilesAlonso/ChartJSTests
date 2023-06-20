@@ -8,6 +8,9 @@ import { getDimensions } from './api'
     document.getElementById('dimensions'),
     {
       type: 'bubble',
+      options: {
+        aspectRatio: 1,
+      },
       data: {
         labels: data.map(x => x.year),
         datasets: [
